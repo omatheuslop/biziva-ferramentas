@@ -34,7 +34,9 @@
     "lint": "eslint src --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
     "script:create:tool": "node scripts/create-tool.mjs",
     "script:create:ui": "hygen generator ui-component",
-    "release": "node ./scripts/release.mjs"
+    "release": "node ./scripts/release.mjs",
+    "biziva": "node public/biziva/server.mjs",
+    "test:biziva": "node --test public/biziva/*.test.mjs"
   },
   "dependencies": {
     "@it-tools/bip39": "^0.0.4",
