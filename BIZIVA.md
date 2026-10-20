@@ -7,3 +7,7 @@ O módulo novo funciona localmente sem serviços externos e sem IA. Arquivos de 
 O servidor mínimo recusa métodos de escrita e caminhos fora dos cinco assets da extensão, com CSP e no-store. A CSP do servidor mínimo não afirma proteger o app original em outra hospedagem.
 
 Recursos externos do upstream, login, nuvem, colaboração e transferências entre dispositivos precisam da instalação original e sua configuração. Não há promessa de sincronização nem de criptografia nova; a extensão não altera o protocolo original.
+
+Alterações independentes desta versão realizadas em **19/10/2026 (Brasília)**. Copyright e licença dos autores originais mantidos.
+
+Compatibilidade de CI: a suíte Node da extensão tem execução própria; Vitest mantém a cobertura original sem tentar importar node:test. O runner E2E é Ubuntu22.04, compatível com o Playwright do lockfile herdado.

@@ -108,7 +108,8 @@ export default defineConfig({
     'import.meta.env.PACKAGE_VERSION': JSON.stringify(process.env.npm_package_version),
   },
   test: {
-    exclude: [...configDefaults.exclude, '**/*.e2e.spec.ts'],
+    // The Biziva node:test suite runs separately through npm run test:biziva.
+    exclude: [...configDefaults.exclude, '**/*.e2e.spec.ts', 'public/biziva/**'],
   },
   build: {
     target: 'esnext',
