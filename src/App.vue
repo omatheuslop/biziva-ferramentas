@@ -23,6 +23,7 @@ syncRef(
 <template>
   <n-config-provider :theme="theme" :theme-overrides="themeOverrides">
     <NGlobalStyle />
+    <a href="/biziva/index.html" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;background:#151217;color:#fff;text-decoration:none;font:14px Arial,sans-serif;border-bottom:2px solid #d51a40"><strong>BIZIVA FERRAMENTAS</strong><span>Campanhas e WhatsApp →</span></a>
     <NMessageProvider placement="bottom">
       <NNotificationProvider placement="bottom-right">
         <component :is="layout">
